@@ -67,21 +67,13 @@ class AdminCategoryController extends Controller
         $request->validate([
             'name' => 'required|max:30',
             'slug' => 'required|alpha_dash|unique:categories,slug,' . $request->id,
-            'description' => 'required',
             'image' => 'nullable|image|max:2048',
-            'status' => 'boolean',
-            'meta_title' => 'required|max:30',
-            'meta_description' => 'required|max:100',
         ]);
 
         try {
             $category = Category::find($id);
             $category->name = $request->name;
             $category->slug = $request->slug;
-            $category->description = $request->description;
-            $category->status = $request->status == null ? 0 : 1;
-            $category->meta_title = $request->meta_title;
-            $category->meta_description = $request->meta_description;
 
             if ($request->hasFile('image')) {
                 $image = $request->file('image');

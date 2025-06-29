@@ -22,6 +22,7 @@ Route::post('/dashboard/category/new', [AdminCategoryController::class, 'createC
 Route::get('/dashboard/category/edit/{id}', [AdminCategoryController::class, 'editCategoryPage'])->name('dash.category.editPage');
 Route::post('/dashboard/category/edit/{id}', [AdminCategoryController::class, 'editCategory'])->name('dash.category.edit');
 Route::get('/dashboard/category/delete/{id}', [AdminCategoryController::class, 'deleteCategory'])->name('dash.category.delete');
+Route::delete('/dashboard/category/delete/{id}', [AdminCategoryController::class, 'deleteCategory'])->name('dash.category.delete');
 
 // manage products
 Route::get('/dashboard/products', [AdminProductController::class, 'productsPage'])->name('dash.products');
