@@ -1,1 +1,140 @@
-{"divisions":{"Barishal":{"name":"Barishal","districts":[{"name":"Barguna"},{"name":"Barishal"},{"name":"Bhola"},{"name":"Jhalokati"},{"name":"Patuakhali"},{"name":"Pirojpur"}]},"Chattogram":{"name":"Chattogram","districts":[{"name":"Bandarban"},{"name":"Brahmanbaria"},{"name":"Chandpur"},{"name":"Chattogram"},{"name":"Cox's Bazar"},{"name":"Cumilla"},{"name":"Feni"},{"name":"Khagrachhari"},{"name":"Lakshmipur"},{"name":"Noakhali"},{"name":"Rangamati"}]},"Dhaka":{"name":"Dhaka","districts":[{"name":"Dhaka"},{"name":"Faridpur"},{"name":"Gazipur"},{"name":"Gopalganj"},{"name":"Kishoreganj"},{"name":"Madaripur"},{"name":"Manikganj"},{"name":"Munshiganj"},{"name":"Narayanganj"},{"name":"Narsingdi"},{"name":"Rajbari"},{"name":"Shariatpur"},{"name":"Tangail"}]},"Khulna":{"name":"Khulna","districts":[{"name":"Bagerhat"},{"name":"Chuadanga"},{"name":"Jashore"},{"name":"Jhenaidah"},{"name":"Khulna"},{"name":"Kushtia"},{"name":"Magura"},{"name":"Meherpur"},{"name":"Narail"},{"name":"Satkhira"}]},"Mymensingh":{"name":"Mymensingh","districts":[{"name":"Jamalpur"},{"name":"Mymensingh"},{"name":"Netrokona"},{"name":"Sherpur"}]},"Rajshahi":{"name":"Rajshahi","districts":[{"name":"Bogura"},{"name":"Chapainawabganj"},{"name":"Joypurhat"},{"name":"Naogaon"},{"name":"Natore"},{"name":"Pabna"},{"name":"Rajshahi"},{"name":"Sirajganj"}]},"Rangpur":{"name":"Rangpur","districts":[{"name":"Dinajpur"},{"name":"Gaibandha"},{"name":"Kurigram"},{"name":"Lalmonirhat"},{"name":"Nilphamari"},{"name":"Panchagarh"},{"name":"Rangpur"},{"name":"Thakurgaon"}]},"Sylhet":{"name":"Sylhet","districts":[{"name":"Habiganj"},{"name":"Moulvibazar"},{"name":"Sunamganj"},{"name":"Sylhet"}]}}}
+{
+  "divisions": {
+    "Ayeyarwady": {
+      "name": "Ayeyarwady",
+      "districts": [
+        { "name": "Hinthada" },
+        { "name": "Kyonpyaw" },
+        { "name": "Labutta" },
+        { "name": "Maubin" },
+        { "name": "Myaungmya" },
+        { "name": "Pathein" },
+        { "name": "Pyapon" }
+      ]
+    },
+    "Bago": {
+      "name": "Bago",
+      "districts": [
+        { "name": "Bago" },
+        { "name": "Tharrawaddy" },
+        { "name": "Taungoo" },
+        { "name": "Pyay" }
+      ]
+    },
+    "Chin": {
+      "name": "Chin",
+      "districts": [
+        { "name": "Falam" },
+        { "name": "Hakha" },
+        { "name": "Mindat" }
+      ]
+    },
+    "Kachin": {
+      "name": "Kachin",
+      "districts": [
+        { "name": "Bhamo" },
+        { "name": "Myitkyina" },
+        { "name": "Putao" }
+      ]
+    },
+    "Kayah": {
+      "name": "Kayah",
+      "districts": [
+        { "name": "Loikaw" },
+        { "name": "Bawlakhe" }
+      ]
+    },
+    "Kayin": {
+      "name": "Kayin",
+      "districts": [
+        { "name": "Hpa-an" },
+        { "name": "Myawaddy" },
+        { "name": "Kawkareik" }
+      ]
+    },
+    "Magway": {
+      "name": "Magway",
+      "districts": [
+        { "name": "Magway" },
+        { "name": "Minbu" },
+        { "name": "Pakokku" },
+        { "name": "Thayet" },
+        { "name": "Gangaw" }
+      ]
+    },
+    "Mandalay": {
+      "name": "Mandalay",
+      "districts": [
+        { "name": "Mandalay" },
+        { "name": "Pyin Oo Lwin" },
+        { "name": "Meiktila" },
+        { "name": "Myingyan" },
+        { "name": "Nyaung-U" },
+        { "name": "Yamethin" }
+      ]
+    },
+    "Mon": {
+      "name": "Mon",
+      "districts": [
+        { "name": "Mawlamyine" },
+        { "name": "Thaton" }
+      ]
+    },
+    "Naypyidaw": {
+      "name": "Naypyidaw",
+      "districts": [
+        { "name": "Ottara District" },
+        { "name": "Dekkhina District" }
+      ]
+    },
+    "Rakhine": {
+      "name": "Rakhine",
+      "districts": [
+        { "name": "Sittwe" },
+        { "name": "Kyaukpyu" },
+        { "name": "Maungdaw" },
+        { "name": "Thandwe" }
+      ]
+    },
+    "Sagaing": {
+      "name": "Sagaing",
+      "districts": [
+        { "name": "Sagaing" },
+        { "name": "Shwebo" },
+        { "name": "Monywa" },
+        { "name": "Kale" },
+        { "name": "Tamu" },
+        { "name": "Katha" },
+        { "name": "Kanbalu" }
+      ]
+    },
+    "Shan": {
+      "name": "Shan",
+      "districts": [
+        { "name": "Lashio" },
+        { "name": "Kengtung" },
+        { "name": "Taunggyi" },
+        { "name": "Muse" },
+        { "name": "Hsipaw" },
+        { "name": "Langkho" }
+      ]
+    },
+    "Tanintharyi": {
+      "name": "Tanintharyi",
+      "districts": [
+        { "name": "Dawei" },
+        { "name": "Myeik" },
+        { "name": "Kawthaung" }
+      ]
+    },
+    "Yangon": {
+      "name": "Yangon",
+      "districts": [
+        { "name": "North Yangon" },
+        { "name": "South Yangon" },
+        { "name": "East Yangon" },
+        { "name": "West Yangon" }
+      ]
+    }
+  }
+}
