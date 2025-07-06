@@ -15,6 +15,7 @@ const props = defineProps({
 })
 
 import AddressModal from './Components/AddressModal.vue';
+import { toast } from 'vue3-toastify';
 const showModal = ref(false);
 const newProps = ref('');
 
@@ -25,6 +26,28 @@ const openModel =  (types) => {
 
     showModal.value = true;
 };
+
+
+let updateAddress = useForm({});
+
+function updateDefault(){
+    updateAddress.post(route('addressDefault.update'), {
+        onSuccess: () => {
+            toast.success("Address Updated");
+        },
+        onError: () => {
+            toast.error(updateAddress.errors.message);
+        },
+    })
+}
+
+function deleteAddress(id) {
+    useForm({}).get(route('address.delete', id))
+}
+
+
+const isAddress = ref(props.homeAddress?.is_default || props.officeAddress?.is_default);
+
 
 
 </script>
