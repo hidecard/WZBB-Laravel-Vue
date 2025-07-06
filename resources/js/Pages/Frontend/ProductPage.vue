@@ -55,7 +55,7 @@ function quantitySelect(incOrDec) {
                                 <!-- rating -->
                                 <!-- rating -->
                                 <small class="text-warning">
-                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>           
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -90,6 +90,7 @@ function quantitySelect(incOrDec) {
                                 </div>
                             </div>
                             <div class="mt-3 row justify-content-start g-2 align-items-center">
+                                
                                 <div class="col-xxl-4 col-lg-4 col-md-5 col-5 d-grid">
                                     <!-- button -->
                                     <!-- btn -->

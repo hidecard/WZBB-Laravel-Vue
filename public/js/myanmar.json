@@ -1,0 +1,140 @@
+{
+  "divisions": {
+    "Ayeyarwady": {
+      "name": "Ayeyarwady",
+      "districts": [
+        { "name": "Hinthada" },
+        { "name": "Kyonpyaw" },
+        { "name": "Labutta" },
+        { "name": "Maubin" },
+        { "name": "Myaungmya" },
+        { "name": "Pathein" },
+        { "name": "Pyapon" }
+      ]
+    },
+    "Bago": {
+      "name": "Bago",
+      "districts": [
+        { "name": "Bago" },
+        { "name": "Tharrawaddy" },
+        { "name": "Taungoo" },
+        { "name": "Pyay" }
+      ]
+    },
+    "Chin": {
+      "name": "Chin",
+      "districts": [
+        { "name": "Falam" },
+        { "name": "Hakha" },
+        { "name": "Mindat" }
+      ]
+    },
+    "Kachin": {
+      "name": "Kachin",
+      "districts": [
+        { "name": "Bhamo" },
+        { "name": "Myitkyina" },
+        { "name": "Putao" }
+      ]
+    },
+    "Kayah": {
+      "name": "Kayah",
+      "districts": [
+        { "name": "Loikaw" },
+        { "name": "Bawlakhe" }
+      ]
+    },
+    "Kayin": {
+      "name": "Kayin",
+      "districts": [
+        { "name": "Hpa-an" },
+        { "name": "Myawaddy" },
+        { "name": "Kawkareik" }
+      ]
+    },
+    "Magway": {
+      "name": "Magway",
+      "districts": [
+        { "name": "Magway" },
+        { "name": "Minbu" },
+        { "name": "Pakokku" },
+        { "name": "Thayet" },
+        { "name": "Gangaw" }
+      ]
+    },
+    "Mandalay": {
+      "name": "Mandalay",
+      "districts": [
+        { "name": "Mandalay" },
+        { "name": "Pyin Oo Lwin" },
+        { "name": "Meiktila" },
+        { "name": "Myingyan" },
+        { "name": "Nyaung-U" },
+        { "name": "Yamethin" }
+      ]
+    },
+    "Mon": {
+      "name": "Mon",
+      "districts": [
+        { "name": "Mawlamyine" },
+        { "name": "Thaton" }
+      ]
+    },
+    "Naypyidaw": {
+      "name": "Naypyidaw",
+      "districts": [
+        { "name": "Ottara District" },
+        { "name": "Dekkhina District" }
+      ]
+    },
+    "Rakhine": {
+      "name": "Rakhine",
+      "districts": [
+        { "name": "Sittwe" },
+        { "name": "Kyaukpyu" },
+        { "name": "Maungdaw" },
+        { "name": "Thandwe" }
+      ]
+    },
+    "Sagaing": {
+      "name": "Sagaing",
+      "districts": [
+        { "name": "Sagaing" },
+        { "name": "Shwebo" },
+        { "name": "Monywa" },
+        { "name": "Kale" },
+        { "name": "Tamu" },
+        { "name": "Katha" },
+        { "name": "Kanbalu" }
+      ]
+    },
+    "Shan": {
+      "name": "Shan",
+      "districts": [
+        { "name": "Lashio" },
+        { "name": "Kengtung" },
+        { "name": "Taunggyi" },
+        { "name": "Muse" },
+        { "name": "Hsipaw" },
+        { "name": "Langkho" }
+      ]
+    },
+    "Tanintharyi": {
+      "name": "Tanintharyi",
+      "districts": [
+        { "name": "Dawei" },
+        { "name": "Myeik" },
+        { "name": "Kawthaung" }
+      ]
+    },
+    "Yangon": {
+      "name": "Yangon",
+      "districts": [
+        { "name": "North Yangon" },
+        { "name": "South Yangon" },
+        { "name": "East Yangon" },
+        { "name": "West Yangon" }
+      ]
+    }
+  }
+}
