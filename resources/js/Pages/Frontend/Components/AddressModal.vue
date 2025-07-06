@@ -21,7 +21,7 @@ const closeModal = () => {
 //modal logics end
 
 
-import bdData from "@/js/bangladesh.json";
+import bdData from "@/js/myanmar.json";
 import { useForm } from '@inertiajs/vue3';
 
 const props = defineProps({
@@ -32,7 +32,7 @@ const props = defineProps({
 })
 
 const addressForm = useForm({
-    country: props.address?.country || 'Bangladesh',
+    country: props.address?.country || 'Myanmar',
     city: props.address?.city || '',
     district: props.address?.district || '',
     address: props.address?.address || '',
@@ -65,11 +65,11 @@ function submitForm() {
             <div v-if="isOpen" class="modal-overlay" @click="handleOverlayClick">
                 <div class="modal-dialog modal-dialog-centered" @click.stop>
                     <div class="modal-content">
-                        <div class="modal-body p-6">
-                            <div class="d-flex justify-content-between mb-5">
+                        <div class="p-6 modal-body">
+                            <div class="mb-5 d-flex justify-content-between">
                                 <div>
                                     <h5 class="mb-1" id="addAddressModalLabel">Update Shipping Address</h5>
-                                    <p class="small mb-0">Add new shipping address for your order delivery.</p>
+                                    <p class="mb-0 small">Add new shipping address for your order delivery.</p>
                                 </div>
                                 <div>
                                     <button type="button" class="btn-close" @click="closeModal"></button>
@@ -88,9 +88,7 @@ function submitForm() {
                                 <div class="col-12">
                                     <select v-model="addressForm.country" class="form-select">
                                         <option value="">Country</option>
-                                        <option value="Bangladesh">Bangladesh</option>
-                                        <option value="Bangladesh">Dubai</option>
-                                        <option value="Bangladesh">Canada</option>
+                                        <option value="Bangladesh">Myanmar</option>
                                     </select>
                                     <small class="text-danger">{{ addressForm.errors.country }}</small>
 
@@ -136,7 +134,7 @@ function submitForm() {
 
                                 </div>
 
-                                <div class="d-flex justify-content-end gap-2">
+                                <div class="gap-2 d-flex justify-content-end">
                                     <button type="button" class="btn btn-outline-primary"
                                         @click="closeModal">Cancel</button>
                                     <button class="btn main-theme" type="submit">Save Address</button>
