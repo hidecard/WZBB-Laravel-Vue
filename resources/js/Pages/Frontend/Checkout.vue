@@ -1,17 +1,39 @@
 <script setup>
+import { ref, watch } from 'vue';
+import { useForm } from '@inertiajs/vue3';
 import MasterFrontend from './Layout/MasterFrontend.vue';
+import CheckoutCart from './Components/CheckoutCart.vue';
 defineOptions({
     layout: MasterFrontend,
 })
+
+const props = defineProps({
+    user : Object,
+    homeAdress : Object,
+    officeAddress : Object,
+    paymentOptions : Array
+})
+
+import AddressModal from './Components/AddressModal.vue';
+const showModal = ref(false);
+const newProps = ref('');
+
+const openModel =  (types) => {
+    if (types == 'new') newProps.value = {};
+    else if (types == 'editHome') newProps.value = props.homeAddress;
+    else newProps.value = props.officeAddress;
+
+    showModal.value = true;
+};
 
 
 </script>
 <template>
     <main>
         <!-- section -->
-        <section class="mb-lg-14 mb-8 mt-8">
+        <section class="mt-8 mb-8 mb-lg-14">
             <div class="container">
-                    <h1 class="fw-bold mb-3">Checkout</h1>
+                    <h1 class="mb-3 fw-bold">Checkout</h1>
                 <div>
                     <!-- row -->
                     <div class="row">
@@ -19,7 +41,7 @@ defineOptions({
                             <!-- accordion -->
                             <div class="accordion accordion-flush" id="accordionFlushExample">
                                 <!-- accordion item -->
-                                <div class="accordion-item py-4">
+                                <div class="py-4 accordion-item">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <!-- heading one -->
                                         <a href="#" class="fs-5 text-inherit collapsed h4" data-bs-toggle="collapse"
@@ -46,7 +68,7 @@ defineOptions({
 
 
                                 <!-- accordion item -->
-                                <div class="accordion-item py-4">
+                                <div class="py-4 accordion-item">
                                     <a href="#" class="text-inherit h5" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseFour" aria-expanded="false"
                                         aria-controls="flush-collapseFour">
@@ -58,9 +80,9 @@ defineOptions({
                                         data-bs-parent="#accordionFlushExample">
                                         <div class="mt-5">
                                             <div class="">
-                                                <div class="card card-bordered shadow-none mb-2">
+                                                <div class="mb-2 shadow-none card card-bordered">
                                                     <!-- card body -->
-                                                    <div class="card-body p-6">
+                                                    <div class="p-6 card-body">
                                                         <!-- check input -->
                                                         <div class="d-flex">
                                                             <div class="form-check">
@@ -82,8 +104,8 @@ defineOptions({
                                                     </div>
                                                 </div>
                                                 <!-- card -->
-                                                <div class="card card-bordered shadow-none">
-                                                    <div class="card-body p-6">
+                                                <div class="shadow-none card card-bordered">
+                                                    <div class="p-6 card-body">
                                                         <!-- check input -->
                                                         <div class="d-flex">
                                                             <div class="form-check">

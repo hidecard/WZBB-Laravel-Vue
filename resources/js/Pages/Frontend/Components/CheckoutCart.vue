@@ -15,17 +15,16 @@ cartList.value.forEach((product) => {
     ); 
 });
 
-console.log(cartList);
 
 </script>
 <template>
     <div class="col-md-12 offset-xl-1 col-xl-4 col-lg-6">
         <div class="mt-4 mt-lg-0">
-            <div class="card shadow-sm">
-                <h5 class="px-6 py-4 bg-transparent mb-0">Order Details</h5>
+            <div class="shadow-sm card">
+                <h5 class="px-6 py-4 mb-0 bg-transparent">Order Details</h5>
                 <ul class="list-group list-group-flush">
                     <!-- list group item -->
-                    <li v-for="product in cartList" :key="product.id" class="list-group-item px-4 py-3">
+                    <li v-for="product in cartList" :key="product.id" class="px-4 py-3 list-group-item">
                         <div class="row align-items-center">
                             <div class="col-2 col-md-2">
                                 <img :src="'/images/products/' + product.image" alt="Ecommerce" class="img-fluid" />
@@ -34,7 +33,7 @@ console.log(cartList);
                                 <h6 class="mb-0">{{ product.name }}</h6>
                                 <span><small class="text-muted">.98 / lb</small></span>
                             </div>
-                            <div class="col-2 col-md-2 text-center text-muted">
+                            <div class="text-center col-2 col-md-2 text-muted">
                                 <span>{{ product.quantity }}</span>
                             </div>
                             <div class="col-3 text-lg-end text-start text-md-end col-md-3">
@@ -43,8 +42,8 @@ console.log(cartList);
                         </div>
                     </li>
                     <!-- list group item -->
-                    <li class="list-group-item px-4 py-3">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
+                    <li class="px-4 py-3 list-group-item">
+                        <div class="mb-2 d-flex align-items-center justify-content-between">
                             <div>Item Subtotal</div>
                             <div class="fw-bold">{{ totalAmmount }}</div>
                         </div>
@@ -58,7 +57,7 @@ console.log(cartList);
                         </div>
                     </li>
                     <!-- list group item -->
-                    <li class="list-group-item px-4 py-3">
+                    <li class="px-4 py-3 list-group-item">
                         <div class="d-flex align-items-center justify-content-between fw-bold">
                             <div>Subtotal</div>
                             <div>{{ totalAmmount + 3 }}</div>
